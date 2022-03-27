@@ -1,8 +1,7 @@
-from xml.etree.ElementInclude import include
 
-from django.urls import include, path
+from django.urls import path
+from django.views import home
 
 urlpatterns = [
-    path('', include('recipes.urls')),
-    path('recipes/', include('recipes.urls')),
+    path('', home),
 ]
