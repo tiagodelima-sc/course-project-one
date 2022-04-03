@@ -1,5 +1,11 @@
-{% include 'recipes/partials/head.html' %}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    {% include 'recipes/partials/head.html' %}
+     <!--Title Page-->
+     <title> {% block title %}{% endblock title %} Home</title>
+</head>
 <body>
 
     {% include 'recipes/partials/header.html' %}
